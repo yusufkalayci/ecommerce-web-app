@@ -1,0 +1,24 @@
+button._button {
+  background: 0 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 0 10px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  outline: 0;
+  transition: 0.4s;
+  text-decoration: none;
+  color: #777;
+}
+button._button:hover {
+  color: #bd1e2e;
+}
+
+button._button::after {
+  content: '\02795';
+  font-size: 13px;
+  color: #bd1e2e;
+  float: right;
+  margin-left: 5px;
+}

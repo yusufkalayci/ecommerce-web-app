@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  color: #1f1e1e;
+  list-style-type: none;
+
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.container > a {
+  color: #9ab;
+  padding: 0.75em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.container > a:hover {
+  background: #a9aaa000;
+  color: rgb(10, 1, 0);
+}

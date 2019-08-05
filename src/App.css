@@ -1,0 +1,20 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background: #e2e1e0;
+  box-sizing: border-box; /* This will make content height = 100% - 80px */
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  padding-top: 60px;
+  margin: 0;
+}
+
+.App {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
