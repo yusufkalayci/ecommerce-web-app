@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-
+This is my first React Js project. There is nostalgia value for me. It is very simple and shows basic concept of how React Js works.
 
 ## Available Scripts
 
