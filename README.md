@@ -1,8 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## FreshBakery-React App using Stripe Api
+## ecommerce-web-app
 
-- **Front End on the app:**
+This project has a nostaljik value for me since it is my first react.js app
+
+- **Screenshots:**
 <div><img src="mainPage.png" height="100px" width="150px">
 	<img src="productPage.png" height="100px" width="150px">
 	<img src="productSearch.png" height="100px" width="250px">
