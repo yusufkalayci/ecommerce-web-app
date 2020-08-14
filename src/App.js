@@ -1,23 +1,23 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import MainPageLayout from './layouts/MainPageLayout';
+import ProductSearchLayout from './layouts/ProductCollectionLayout';
+import ProductPageLayout from './layouts/ProductPageLayout';
+import Checkout from './components/CheckOut/CheckOut';
 import './App.css';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Home from './containers/Page/Home/Home';
-import About from './containers/Page/About/About';
-import Product from './containers/Page/Product/Product';
-import Checkout from './containers/Page/CheckOut/Checkout';
+import firebase from './firebase/firebase';
+import 'firebase/app';
 
 function App() {
   return (
     <div className='App'>
       <Router>
-        <Header />
-        <Route path='/' exact component={Home} />
-        <Route path='/checkout' exact component={Checkout} />
-        <Route path='/product/:id' exact component={Product} />
-        <Route path='/about' component={About} />
-        <Footer />
+        <Switch>
+          <Route exact path='/' component={MainPageLayout} />
+          <Route path='/collections/:id' component={ProductSearchLayout} />
+          <Route path='/products/:id' component={ProductPageLayout} />
+          <Route path='/checkout' component={Checkout} />
+        </Switch>
       </Router>
     </div>
   );
